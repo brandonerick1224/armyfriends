@@ -1,0 +1,7 @@
+/.sass-cache
+/public/storage
+Homestead.yaml
+Homestead.json
+.env
+/.idea
+/dump.rdb

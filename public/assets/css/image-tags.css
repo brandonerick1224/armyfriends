@@ -1,0 +1,35 @@
+/** Image tags plugin  @author Vedmant <vedmant@gmail.com> */
+.image-tags-container { position: relative; }
+
+.it-tager { position: absolute; top: 0; left: 0; width: 20px; height: 20px; opacity: 0.6; background-color: red; border-radius: 50%; }
+
+.it-toolbar { margin-bottom: 20px; }
+
+.it-tag { position: absolute; }
+.it-tag:hover .itt-indicator { -webkit-transform: scale(1.2); -ms-transform: scale(1.2); -o-transform: scale(1.2); transform: scale(1.2); }
+.it-tag:hover .itt-content { top: 10px; opacity: 1; visibility: visible; }
+.it-tag:hover .itt-untag { opacity: 1; visibility: visible; -webkit-transition: all 0.3s ease 0.3s; -o-transition: all 0.3s ease 0.3s; transition: all 0.3s ease 0.3s; }
+
+.itt-indicator { position: absolute; left: 0; top: 0; width: 20px; height: 20px; opacity: 0.6; background-color: white; border-radius: 50%; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+
+.itt-content { position: absolute; top: 0; left: -60px; width: 150px; opacity: 0; visibility: hidden; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+
+.itt-content-inner { margin-top: 20px; padding: 10px; border-radius: 5px; background-color: white; color: black; }
+.itt-content-inner:before, .itt-content-inner:after { content: " "; display: table; }
+.itt-content-inner:after { clear: both; }
+
+.itt-image { float: left; width: 30px; margin-right: 10px; }
+
+.itt-image img { max-width: 100%; }
+
+.itt-title { font-size: 13px; }
+
+.itt-title a { color: black; }
+
+.itt-untag { position: absolute; z-index: 2; top: 31px; left: 72px; width: 18px; height: 18px; opacity: 0; visibility: hidden; -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+
+.itt-untag:before, .itt-untag:after { content: ""; position: absolute; top: 50%; left: 6px; width: 5px; height: 15px; margin-top: -7px; background: #cc0000; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+
+.itt-untag:after { left: 1px; width: 15px; height: 5px; margin-top: -2px; }
+
+.itt-untag:hover:before, .itt-untag:hover:after { background-color: red; }
